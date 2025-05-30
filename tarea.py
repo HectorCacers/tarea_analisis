@@ -1,7 +1,8 @@
 import random
 import time
 
-# Algoritmo a probar: puedes reemplazar por insertion_sort, quick_sort, etc.
+
+
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n):
@@ -10,7 +11,7 @@ def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
 
-# Función para medir tiempos
+
 def medir_tiempos(algoritmo, tam):
     resultados = []
     for i in range(5):
@@ -25,7 +26,6 @@ def medir_tiempos(algoritmo, tam):
     print(f"Promedio: {promedio:.6f} segundos\n")
     return resultados, promedio
 
-# Pruebas por cada tamaño
 def main():
     print("🧪 Pruebas para Bubble Sort (máximo 12,000 elementos)\n")
 
